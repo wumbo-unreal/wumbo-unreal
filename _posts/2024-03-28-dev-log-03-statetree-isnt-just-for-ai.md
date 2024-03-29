@@ -19,8 +19,8 @@ Unreal Engine comes with a handful of plugins with their own schemas and process
 | Plugin | Purpose | Processor |
 | --------------- | ------- | -------- |
 | `GameplayStateTree` | StateTree for actors. | `StateTreeComponent` actor component|
-| `GameplayInteractions` | StateTree for smart objects. | TBD |
-| `MassAI` | StateTree for Mass entities. | TBD |
+| `GameplayInteractions` | StateTree for smart objects. | `UAITask_UseGameplayInteraction` gameplay task |
+| `MassAI` | StateTree for Mass entities. | Various Mass processors |
 
 Unreal Engine uses StateTree exclusively for AI, and even placed the asset type under the *Artificial Intelligence* category.
 
