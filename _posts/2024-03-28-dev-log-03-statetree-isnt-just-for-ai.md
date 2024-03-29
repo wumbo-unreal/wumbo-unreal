@@ -1,7 +1,7 @@
 ---
 tags: 
   - unreal
-title: "Dev Log 03: StateTree isn't just for AI"
+title: "Dev Log 03: StateTree Isn't Just for AI"
 categories:
   - Dev Logs
 ---
@@ -98,9 +98,13 @@ Here's what my frontend looks as a StateTree. Each step in the flowchart above i
 
 The *StateTree Component* schema provides an actor as context data. Since my use case involves input and widgets, I set the actor type to PlayerController. The startup level in my game uses a special PlayerController actor that has a StateTree Component. This makes the StateTree immediately begin executing when the game loads.
 
-> The funny thing is I actually spent weeks building a UMG StateTree with its own custom schema and a set of tasks. Unfortunately, what I ended up with is more or less the same thing as the built-in GameplayStateTree plugin. The only real difference between my plugin and GameplayStateTree is that the processor is implemented as a subsystem rather than as an actor component.
->
-> I even wrote a whole article about this, but it doesn't feel right to publish it when I realized the better solution is to just use GameplayStateTree.
+---
+
+The funny thing is I actually spent weeks building a UMG StateTree with its own custom schema and a set of tasks. Unfortunately, what I ended up with is more or less the same thing as the built-in GameplayStateTree plugin. The only real difference between my plugin and GameplayStateTree is that the processor is implemented as a subsystem rather than as an actor component.
+
+I even wrote a whole article about this, but it doesn't feel right to publish it when I realized the better solution is to just use GameplayStateTree.
+
+---
 
 Most tasks complete in a success or failed state. For example, a player wanting to back out of character creation causes the state to fail. This will trigger a transition to bring the player back to the main menu.
 
@@ -138,7 +142,7 @@ In each one of your blueprint nodes (tasks, conditions, or evaluators), be sure 
 <img src='/assets/images/st-blueprint-options.png' alt="Blueprint options with Blueprint Display Name set to Wait for Input and Blueprint Category set to Frontend" />
 
 ### Parameter types
-The `Category` specifier sets the *type* of a parameter.
+The Category sets the *type* of a parameter.
 
 <img src='/assets/images/st-parameter-types.png' alt="Blueprint variables under the Context, Input, Parameter, and Output categories" />
 <br />
@@ -150,7 +154,7 @@ There are 3 special types of parameters:
 |Category|Behavior|
 |----|-------|
 |`Context`|A value is required. Automatically links to context data in the StateTree with the same type, but may be overridden with a binding.|
-|`Input`|A value is required unless marked optional with `meta=(Optional)`. This value can only be set with a binding.|
+|`Input`|A value is required unless marked optional with `meta=(Optional)` in C++. This value can only be set with a binding.|
 |`Output`|This value can only be bound to other properties.|
 
 Parameters in all other categories appear normal.
@@ -168,4 +172,4 @@ There is also an invisible button right before the operator button. Click on it 
 The *Tree Succeeded* and *Tree Failed* transitions inside a subtree will surface to the linked state and no further. However, if a subtree was entered by a transition instead of a linked state, then these transitions will affect the whole StateTree.
 
 ## Ending thoughts
-I'm not claiming this is the best approach, but it does work pretty well. The biggest benefit of using StateTree is that I can see the entire flow all in a single asset. So, yeah, I'm happy with what I have right now. :)
+I'm not claiming this is the best approach, but it does work pretty well. The biggest benefit of using StateTree is that I can see the entire flow within a single asset. So, yeah, I'm happy with what I have right now. :)
