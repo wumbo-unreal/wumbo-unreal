@@ -45,7 +45,7 @@ graph TD
     title_screen -- Pressed 🅐 --> signin
     signin{Platform<br/>sign-in}
     signin -- Failed --> error_modal_signin
-    error_modal_signin["Error modal<br/>Begin offline mode"<br/>]
+    error_modal_signin[Begin offline mode]
     error_modal_signin --> oobe
     signin -- Success --> oobe
     oobe{First run?} -- No --> quick_resume
