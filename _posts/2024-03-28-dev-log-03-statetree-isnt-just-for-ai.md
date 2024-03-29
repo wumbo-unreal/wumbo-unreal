@@ -6,8 +6,6 @@ categories:
   - Dev Logs
 ---
 
-# Dev Log 03: StateTree isn't just for AI
-
 <img src="https://img.shields.io/badge/Unreal%20Engine-5.4-informational" alt="Written for Unreal Engine 5.4"> <img src="https://img.shields.io/badge/-Dev%20Log-red" alt="Dev Log">
 
 StateTree is a hierarchical state machine introduced in Unreal Engine 5.
