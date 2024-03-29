@@ -32,7 +32,9 @@ Once again, StateTree is a *general purpose* state machine built into Unreal Eng
 
 ## Why do I need a state machine?
 
-First, let's take a look at my game's frontend. The player goes through this sequence when launching my game:
+First, let's take a look at my game's frontend.
+
+The player goes through this sequence when launching my game — and no, I don't expect you to read it all.
 
 @startmermaid
 %%{ init: { 'flowchart': { 'curve': 'monotoneY' } } }%%
