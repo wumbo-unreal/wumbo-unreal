@@ -43,7 +43,7 @@ graph TD
     splash(Startup Movies) --> title_screen
     title_screen["Title Screen <br/> 'Press 🅐 to Start'"]
     title_screen -- Pressed 🅐 --> signin
-    signin{Platform<br/>sign-in}
+    signin{Platform sign-in}
     signin -- Failed --> error_modal_signin
     error_modal_signin[Begin offline mode]
     error_modal_signin --> oobe
