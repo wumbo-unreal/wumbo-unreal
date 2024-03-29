@@ -45,19 +45,19 @@ graph TD
     title_screen -- Pressed 🅐 --> signin
     signin{Platform<br/>sign-in}
     signin -- Failed --> error_modal_signin
-    error_modal_signin["Error modal <br />'Sign-in failed'<br/>Begin offline mode"]
+    error_modal_signin["Error modal<br/>Begin offline mode"]
     error_modal_signin --> oobe
     signin -- Success --> oobe
     oobe{First run?} -- No --> quick_resume
-    quick_resume{Has existing<br/>save?}
+    quick_resume{Has existing save?}
     quick_resume -- No --> title_menu
     quick_resume -- Yes --> confirm_load_save
-    confirm_load_save[Prompt load most<br/>recent save]
+    confirm_load_save[Prompt load save]
     confirm_load_save -- No --> title_menu
     confirm_load_save --> lobby
     title_menu[Title Menu<br/><ul style="text-align: left;"><li>Play</li><li>Settings</li><li>Exit</li></ul>]
     oobe -- Yes --> settings_firstrun
-    settings_firstrun[Accessibility<br/>Settings]
+    settings_firstrun[Accessibility Settings]
     settings_firstrun -- Save / Cancel --> charcreate
     charcreate[Character Creation]
     title_menu -- Settings --> settings
@@ -69,7 +69,7 @@ graph TD
     charcreate -- Confirm --> lobby
     lobby([Co-op Lobby])
     title_menu -- Play --> has_slots
-    has_slots{Saves<br/>exist?}
+    has_slots{Saves exist?}
     has_slots -- No --> charcreate
     has_slots -- Yes --> loadgame
     loadgame[Select Save]
