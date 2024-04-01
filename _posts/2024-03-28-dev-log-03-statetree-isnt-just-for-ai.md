@@ -171,5 +171,8 @@ There is also an invisible button right before the operator button. Click on it 
 ### Subtree transitions
 The *Tree Succeeded* and *Tree Failed* transitions inside a subtree will surface to the linked state and no further. However, if a subtree was entered by a transition instead of a linked state, then these transitions will affect the whole StateTree.
 
+### Blueprint Latent Node Caveat
+Be mindful when using certain latent nodes (e.g. Async Save Game). Calling *Finish Task* from these latent nodes will not trigger transitions. Consider raising a StateTree event instead.
+
 ## Ending thoughts
 I'm not claiming this is the best approach, but it does work pretty well. The biggest benefit of using StateTree is that I can see the entire flow within a single asset. So, yeah, I'm happy with what I have right now. :)
