@@ -33,6 +33,7 @@ minima:
   skin: dark
   social_links:
     - { platform: twitter, user_url: "https://twitter.com/unrealist_matt" }
+    - { platform: rss }
 
 header_pages:
   - _pages/plugins.md
