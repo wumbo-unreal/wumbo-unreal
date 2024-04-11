@@ -76,6 +76,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/unrealist_matt"
+    - label: "rss"
+      icon: "fab fa-fw fa-rss"
+      url: "https://unrealist.org/feed.xml"
 
 defaults:
   # _posts
