@@ -29,7 +29,7 @@ Put your widget in a *Retainer Box* and set the Effect Material.
 
 Then on each tick, update the *Value* parameter to a number between 0–1.
 
-In my game, I evaluate a curve and then plug the value into the effect material's parameter named *Value*.
+In my game, I evaluate a curve and then plug the value into this parameter.
 
 <img src="/assets/images/radial-fade-usage.png">
 
