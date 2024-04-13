@@ -61,6 +61,3 @@ When *Value* is 1, both outputs negate each other and provides us with a uniform
 
 <img src="/assets/images/radial-fade-gif-3.gif">
 <img src="/assets/images/radial-fade-gif-2.gif">
-
-## Conclusion
-There's a surprising lack of information on materials out there, especially User Interface materials. It was challenging for me to learn how to create shaders, so I'm sharing my materials and explaining how they work in hopes that it will help others. :)
