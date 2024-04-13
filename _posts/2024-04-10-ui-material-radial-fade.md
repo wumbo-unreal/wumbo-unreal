@@ -40,7 +40,7 @@ Let's begin with a simple radial gradient which can be accomplished with the *Di
 
 For this material, we want to control the fade transition with a scalar parameter named *Value*. Our goal is to make it so that a value of 0 makes the widget completely invisible, and a value of 1 makes it completely visible.
 
-By subtracting the distance from the parameter, we move step closer to achieving this.
+By subtracting the distance from the parameter, we move one step closer to achieving this.
 
 <img src="/assets/images/radial-fade-2.png">
 
