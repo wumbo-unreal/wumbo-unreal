@@ -9,7 +9,7 @@ categories:
 <img src="https://img.shields.io/badge/Unreal%20Engine-informational" alt="Written for Unreal Engine"> <img src="https://img.shields.io/badge/-Materials-teal" alt="Materials">
 
 ## Preview
-<img src="/assets/images/radial-fade-preview.gif" width="50%">
+<img src="/assets/images/radial-fade-preview.gif" width="70%">
 
 ## Complete material
 Click for full resolution.
@@ -19,8 +19,8 @@ Click for full resolution.
 |---------|----|
 |`Texture`|Texture Sample|
 |`Value`|Scalar 0.0–1.0|
-|`CenterX`|Scalar 0.0–1.0|
-|`CenterY`|Scalar 0.0–1.0|
+|`CenterU`|Scalar 0.0–1.0|
+|`CenterV`|Scalar 0.0–1.0|
 
 ## Usage
 Put your widget in a *Retainer Box* and set the Effect Material.
